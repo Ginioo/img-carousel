@@ -1,5 +1,5 @@
 {
-  "name": "simple-carousel",
+  "name": "@ginioo/simple-carousel",
   "version": "0.0.1",
   "description": "a simple carousel for images or else",
   "main": "dist/src/index.js",
