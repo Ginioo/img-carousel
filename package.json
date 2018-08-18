@@ -1,6 +1,6 @@
 {
   "name": "@ginioo/simple-carousel",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "a simple carousel for images or else",
   "main": "dist/src/index.js",
   "repository": "",
@@ -13,12 +13,10 @@
   "author": "Gino Wu",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.4",
     "babel-plugin-root-import": "^5.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
@@ -26,8 +24,10 @@
     "react": "^16.2.0",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
-    "react-transition-group": "^2.3.1",
     "redux": "^3.7.2",
     "uuid": "^3.2.1"
+  },
+  "dependencies": {
+    "react-transition-group": "^2.4.0"
   }
 }

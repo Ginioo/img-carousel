@@ -30,3 +30,11 @@ class SampleComponent extends Component {
 
 export default SampleComponent;
 ```
+
+3. define `#simple-carousel` height and width
+```css
+#simple-carousel {
+  width: 1024px;
+  height: 440px;
+}
+```

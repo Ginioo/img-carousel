@@ -15,7 +15,7 @@ export default class Carousel extends Component {
         this.setState({src: [this.props.src]});
         break;
       default:
-        this.setState({src: [...this.props.src]});
+        this.setState({src: this.props.src});
         break;
     }
 
@@ -28,8 +28,7 @@ export default class Carousel extends Component {
 
   change() {
     let src = this.state.src;
-    let item = src.shift();
-    src.push(item);
+    src.push(src.shift());
 
     this.setState({
       src: [...src]
@@ -52,7 +51,7 @@ export default class Carousel extends Component {
           <TransitionGroup>
             <CSSTransition key={uuid.v4()} classNames={direction} timeout={{enter: 1000, exit: 1000}}>
               <div className="slide">
-                <img className="content" src={this.state.src}/>
+                <img className="content" src={this.state.src[0]}/>
               </div>
             </CSSTransition>
           </TransitionGroup>
